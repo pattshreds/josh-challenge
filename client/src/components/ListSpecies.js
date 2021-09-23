@@ -9,18 +9,15 @@ const Listresults = () => {
     }, []);
 
     const getNames = async () => {
-      let totalNames = [];
-      let currentPage = 1;
       let morePages = true;
+      let currentPage = 1;
           try {
-            while (morePages != null) {
+            while (morePages) {
               let res = await fetch(`https://swapi.dev/api/species/?page=${currentPage}`);
               let data = await res.json();
-              totalNames += data.results;
+              (data.next !== null ? currentPage++ : morePages = false);
+              console.log(currentPage);
               setNames(data.results);
-              console.log(data.results);
-              console.log(totalNames);
-              currentPage++;
             }
           } catch (err) {
               console.error(err);
