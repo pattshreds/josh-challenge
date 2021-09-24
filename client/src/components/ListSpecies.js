@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import '../App.css';
 
-const Listresults = () => {
-  const [names, setNames] = useState([]);
-  // const [people, setPeople] = useState([]);
+const ListSpecies = () => {
+  const [species, setSpecies] = useState([]);
 
     useEffect(() => {
-        getNames();
+        getSpecies();
     }, []);
 
-    const getNames = async () => {
+    const getSpecies = async () => {
       let morePages = true;
       let currentPage = 1;
           try {
@@ -16,20 +16,21 @@ const Listresults = () => {
               let res = await fetch(`https://swapi.dev/api/species/?page=${currentPage}`);
               let data = await res.json();
               (data.next !== null ? currentPage++ : morePages = false);
-              console.log(currentPage);
-              setNames(data.results);
+              setSpecies(prevState => [...prevState, ...data.results]);
+              console.log(data.results);
             }
           } catch (err) {
               console.error(err);
           }
     };
-    return <div>
-      {names.map((name, index) => (
+
+    return <div id='container'>
+      {species.map((species, index) => (
         <div key={index} id='species'>
-          <h2>{name.name}</h2>
+          <h2>{species.name}</h2>
         </div>
       ))}
     </div>;
 };
 
-export default Listresults;
+export default ListSpecies;

@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: snow;
+}
+
+#species {
+  margin: 1em auto 1em auto;
+  display: flex;
+  justify-content: center;
+}
+
+#navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 4vh;
+  height: 4em;
+  width: 100%;
+  background: red;
+}
+
+#search {
+  height: 4vh;
+  width: 24vw;
+}
+
+#searchSubmit {
+  height: 4vh;
+  width: 12vw;
+}
