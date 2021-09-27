@@ -4,7 +4,7 @@ import './App.css';
 import Nav from './components/Nav';
 import ListSpecies from './components/ListSpecies';
 import ListPeople from './components/ListPeople';
-// import Test from './components/Test';
+import Test from './components/Test';
 
 //====================================
 
@@ -22,6 +22,7 @@ function App() {
                 <Switch>
                     <Route path='/' exact component={ListSpecies} />
                     <Route path='/people' component={ListPeople} />
+                    <Route path='/test' component={Test} />
                 </Switch>
             </div>
         </Router>
