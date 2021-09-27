@@ -1,11 +1,18 @@
 import React from 'react';
-import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import ListSpecies from './components/ListSpecies';
+import './App.css';
 import Nav from './components/Nav';
+import ListSpecies from './components/ListSpecies';
 import ListPeople from './components/ListPeople';
 // import Test from './components/Test';
 
+//====================================
+
+    // Above I've imported all of my packages, styles, and components.
+
+    //Below I used the react-router-dom package to setup paths for the ListSpecies and ListPeople components, while leaving the Nav component rendered all the time.
+
+//====================================
 
 function App() {
     return (
@@ -15,7 +22,6 @@ function App() {
                     <Switch>
                         <Route path="/" exact component={ListSpecies} />
                         <Route path='/people' component={ListPeople} />
-                        {/* <Test /> */}
                     </Switch>    
             </div>
         </Router>

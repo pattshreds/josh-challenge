@@ -2,13 +2,20 @@ import React, { useEffect, useState } from 'react';
 import '../App.css';
 
 const ListSpecies = () => {
+  // Create state for species, and people.
     const [species, setSpecies] = useState([]);
-    const [people, setPeople] = useState([]);
+    // const [people, setPeople] = useState([]);
 
     useEffect(() => {
         getSpecies();
         // getPeople();
     }, []);
+
+//====================================
+
+    // Here I'm able to fetch the data and set state from all pages of the "species" end point.
+
+//====================================
 
     const getSpecies = async () => {
       let morePages = true;
@@ -25,6 +32,12 @@ const ListSpecies = () => {
         console.error(err);
       }
     };
+
+//====================================
+
+    // Below I was trying to find a way to get the data from the people key within data.results from the "species" fetch call, but can't figure out how to list each person with the correspinding species.
+
+//====================================
 
     // const getPeople = async () => {
     //   let morePages = true;
@@ -44,6 +57,15 @@ const ListSpecies = () => {
     //     console.error(err);
     //   }
     // }
+
+//====================================
+
+    // Below I have listed each species name with their corresponding attributes. 
+
+    // I had really wanted to be able to take the link given on the "people" key in data.results from the "species" end point, but wasn't able to figure out a way to map through both the "species" AND the "people" end points at the same time and within the same div, which is why you see the API link listed instead of the names of each person within each species.
+
+//====================================
+
 
     return(
       <div id='container'>

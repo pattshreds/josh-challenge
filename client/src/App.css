@@ -1,7 +1,13 @@
+/* =================================== */
+
+  /* I had wanted to do some great, production quality styling, but I ended up sending days trying to learn how to work with this API. As you know, I wasn't able to figure out how to do a few key thigs that I had been excited to do, which unfortunatley didn't leave me with time to style this well. */
+
+/* =================================== */
+
 body {
   margin: 0;
   padding: 0;
-  background: snow;
+  background: rgb(77, 77, 77);
 }
 
 #species {
@@ -17,17 +23,14 @@ body {
   margin-bottom: 4vh;
   height: 4em;
   width: 100%;
-  background: red;
+  background: rgb(230, 0, 0);
 }
 
-#search {
-  height: 4vh;
-  width: 24vw;
-}
-
-#searchSubmit {
-  height: 4vh;
-  width: 12vw;
+#nav-links {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
+  font-family: Helvetica;
 }
 
 #container {

@@ -2,11 +2,18 @@ import React, { useEffect, useState } from 'react';
 import '../App.css'
 
 const ListPeople = () => {
+  // Create state for people
   const [people, setPeople] = useState([]);
 
   useEffect(() => {
     getPeople();
   }, []);
+
+//====================================
+
+  // Here I was able to fetch data and set state from all pages of the "people" end point.
+
+//====================================
 
   const getPeople = async () => {
     let morePages = true;
@@ -22,6 +29,15 @@ const ListPeople = () => {
         console.error(err);
       }
   }
+
+//====================================
+
+  // Here I was able to map through the data I set to the state and display the peoples names and attributes.
+
+  // Once again, I had really wanted to be able to list details such as "Home Planet" as the name of the planet, but wasn't able to figure out a way to map through two seperate states from seperate API calls at the same time within the same div, which is why the API links are listed instead of the planet names.
+
+//====================================
+
     return (
       <div id='container'>
           {people.map((people, index) => (
