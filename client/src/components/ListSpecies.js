@@ -83,7 +83,7 @@ const ListSpecies = () => {
                     <p id='details'>
                         Average Lifespan - {species.average_lifespan}
                     </p>
-                    <p id='details'>Home Planet(s) - {species.homeworld}</p>
+                    <p id='details'>Home Planet - {species.homeworld}</p>
                 </div>
             ))}
         </div>
