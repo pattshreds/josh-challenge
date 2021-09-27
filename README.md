@@ -4,7 +4,7 @@
   Welcome to the Josh coding challenge!
 </h3>
 <hr>
-<h2>To run:</h2> fork the repo, clone onto your computer, run 'npm i' in your terminal, and enjoy!  
+<h2>To run:</h2> fork the repo, clone onto your computer, run ' npm install ' in your terminal, and enjoy!  
 <hr>
 <h2>
   How is it built?
