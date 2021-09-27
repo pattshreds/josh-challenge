@@ -4,13 +4,8 @@ import '../App.css';
 const Nav = () => {
   return (
     <div id='navBar'>
-      Star Wars!
-      <input type='text' id='search'>
-
-      </input>
-      <button id='searchSubmit'>
-        Search
-      </button>
+      <a href='/people'>People</a>
+      <a href='/'>Species</a>
     </div>
   )
 }

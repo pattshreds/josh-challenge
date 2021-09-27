@@ -29,3 +29,27 @@ body {
   height: 4vh;
   width: 12vw;
 }
+
+#container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+#box {
+  text-align: center;
+  font-family: helvetica;
+  font-size: 2em;
+  width: 40%;
+  margin: .1em;
+  padding: .4em;
+  border: solid 2px black;
+  overflow-wrap: break-word;
+}
+
+#details {
+  font-size: .5em;
+  margin: 0;
+  padding: .2em;
+}
