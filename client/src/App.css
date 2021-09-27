@@ -1,58 +1,58 @@
 /* =================================== */
 
-  /* I had wanted to do some great, production quality styling, but I ended up sending days trying to learn how to work with this API. As you know, I wasn't able to figure out how to do a few key thigs that I had been excited to do, which unfortunatley didn't leave me with time to style this well. */
+/* I had wanted to do some great, production quality styling, but I ended up sending days trying to learn how to work with this API. As you know, I wasn't able to figure out how to do a few key thigs that I had been excited to do, which unfortunatley didn't leave me with time to style this well. */
 
 /* =================================== */
 
 body {
-  margin: 0;
-  padding: 0;
-  background: rgb(77, 77, 77);
+    margin: 0;
+    padding: 0;
+    background: rgb(77, 77, 77);
 }
 
 #species {
-  margin: 1em auto 1em auto;
-  display: flex;
-  justify-content: center;
+    margin: 1em auto 1em auto;
+    display: flex;
+    justify-content: center;
 }
 
 #navBar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 4vh;
-  height: 4em;
-  width: 100%;
-  background: rgb(230, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4vh;
+    height: 4em;
+    width: 100%;
+    background: rgb(230, 0, 0);
 }
 
 #nav-links {
-  text-decoration: none;
-  color: black;
-  font-size: 1.3em;
-  font-family: Helvetica;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-family: Helvetica;
 }
 
 #container {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
 #box {
-  text-align: center;
-  font-family: helvetica;
-  font-size: 2em;
-  width: 40%;
-  margin: .1em;
-  padding: .4em;
-  border: solid 2px black;
-  overflow-wrap: break-word;
+    text-align: center;
+    font-family: helvetica;
+    font-size: 2em;
+    width: 40%;
+    margin: 0.1em;
+    padding: 0.4em;
+    border: solid 2px black;
+    overflow-wrap: break-word;
 }
 
 #details {
-  font-size: .5em;
-  margin: 0;
-  padding: .2em;
+    font-size: 0.5em;
+    margin: 0;
+    padding: 0.2em;
 }
